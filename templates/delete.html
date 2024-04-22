@@ -1,0 +1,10 @@
+{% include "nav.html" %}
+
+<form method= "POST">
+    <div class="mb-3">
+      <label for="Question" class="form-label">Are you sure you want to delete all the list?</label>
+    </div>
+
+    <a href="{% url 'deletingall' %}"> <button type="button" class="btn btn-danger">Yes</button> </a>
+    <a href="{% url 'home' %}"> <button type="button" class="btn btn-primary">No</button> </a>
+  </form>
